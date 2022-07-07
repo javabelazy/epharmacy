@@ -5,41 +5,41 @@ package com.proximotech.epharmacy.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.proximotech.epharmacy.dto.Item;
-import com.proximotech.epharmacy.utils.AppEndPoints;
-
-import io.swagger.annotations.ApiOperation;
+import com.proximotech.epharmacy.dto.User;
 
 /**
  * @author apple
  *
  */
 @RestController
-@RequestMapping("/epharma/")
-public class ItemController {
+@RequestMapping("/epharma")
+public class UserController {
 	
-	
-	
-	@PostMapping(AppEndPoints.ITEM)
-	@ApiOperation("Item creation")
-	public ResponseEntity<?> createItem(@RequestBody Item item){
+	@PostMapping("/user")
+	public ResponseEntity<?> registerUser(@RequestBody User user){
 		return null;
 	}
 	
-	@PutMapping(AppEndPoints.ITEM)
-	public ResponseEntity<?> updateItem(@RequestBody Item item){
+	@PutMapping("/user")
+	public ResponseEntity<?> updateUser(@RequestBody User user){
 		return null;
 	}
 
 	
-	@DeleteMapping(AppEndPoints.ITEM)
-	public ResponseEntity<?> deleteItem(@RequestBody Item item){
+	@DeleteMapping("/user")
+	public ResponseEntity<?> deleteUser(@RequestBody User user){
+		return null;
+	}
+	
+	@GetMapping("/user")
+	public ResponseEntity<?> getUser(@RequestBody User user){
 		return null;
 	}
 

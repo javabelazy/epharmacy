@@ -1,16 +1,16 @@
-package com.proximotech.epharmacy.service;
-
-import org.springframework.stereotype.Service;
-
 /**
  * 
  */
+package com.proximotech.epharmacy.service;
+
+import com.proximotech.epharmacy.dto.Item;
 
 /**
  * @author apple
  *
  */
-@Service
-public class ItemService {
+public interface ItemService {
+
+	public Item createItem(Item item);
 
 }

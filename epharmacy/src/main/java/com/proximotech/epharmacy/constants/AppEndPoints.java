@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.proximotech.epharmacy.utils;
+package com.proximotech.epharmacy.constants;
 
 /**
  * @author apple
